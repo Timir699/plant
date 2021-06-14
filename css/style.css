@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.main-section {
+    display: flex;
+    margin-top: 50px;
+}
+.main-section .left {
+    text-align: center;
+}
+
+.main-section .left .input-box {
+    padding: 10px;
+    border-color: #8DCC3D;
+    outline: none;
+    border-radius: 5px;
+    /* border: none; */
+    border: 1px solid #8DCC3D;
+}
+::placeholder {
+    color: #C2C2C2;
+}
+.main-section .left button {
+    padding: 11px 35px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #8DCC3D;
+    color: #fff;
+    font-weight: 700;
+}
+.main-section .left p {
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.main-section .right .btn{
+    text-align: right;
+    display: block;
+    
+}
+.main-section .right button {
+   background-color: #DBDBDB;
+   color: #fff;
+   font-weight: 700;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   margin-bottom: 40px;
+}
+.main-section .right .progress {
+    border: 2px solid #EDEDED;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+}
+.progress .progress-bar .progress-info {
+    display: flex;
+    justify-content: space-between;
+}
+.progress .progress-bar .progress-info p {
+    font-weight: 700;
+}
+.progress .progress-bar .total-bar {
+    height: 20px;
+    width: 300px;
+    border: 1px solid #C2C2C2;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.progress .progress-bar .main-bar {
+    height: 15px;
+    width: 250px;
+    background: #CEE7AF;
+    border-radius: 25px;
+    margin-top: 1.5px;
+    margin-left: 2px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .left button {
+        margin-top: 15px;
+    }
+    .right button {
+        margin-top: 20px;
+    }
+  }
